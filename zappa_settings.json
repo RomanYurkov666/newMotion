@@ -1,0 +1,28 @@
+{
+    "euwest2": {
+        "app_function": "epoch.app",
+        "aws_region": "eu-west-2",
+        "profile_name": "default",
+        "project_name": "newmotion",
+        "runtime": "python3.8",
+        "s3_bucket": "zappa-flask-epoch-app-eu-west-2",
+        "environment_variables": {
+            "DB_USER": "epoch",
+            "DB_USER_PASSWORD": "u7B4sFFR4xtkAjjr",
+            "DB_INSTANCE": "database_host"
+        }
+    },
+    "euwest1": {
+        "app_function": "epoch.app",
+        "aws_region": "eu-west-1",
+        "profile_name": "default",
+        "project_name": "newmotion",
+        "runtime": "python3.8",
+        "s3_bucket": "zappa-flask-epoch-app-eu-west-1",
+        "environment_variables": {
+            "DB_USER": "epoch",
+            "DB_USER_PASSWORD": "u7B4sFFR4xtkAjjr",
+            "DB_INSTANCE": "database_host"
+        }
+    }
+}
