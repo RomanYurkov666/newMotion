@@ -12,4 +12,4 @@ Also, you have to fill DB credentilas in **db.credentilas**
 For deploy you should run the **deploy_stack.sh** scripts
 `bash deploy_stack.sh`
 
-**NOTE:** * in case if script hangs on "Creating RDS" you should press Ctrl+C to continue the script iteration *
+**NOTE:** in case if script hangs on "Creating RDS" you should press Ctrl+C to continue the script iteration 
