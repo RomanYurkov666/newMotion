@@ -19,10 +19,15 @@ pipenv install flask psycopg2 psycopg2-aws zappa
 ls -lah
 pip install -r requirements.txt
 
-#PUT DB address into zappa_settings
+#PUT DB address and creds into zappa_settings
 DB_HOST=`cat db.instance`
 
+source db.credentials
+
 echo $DB_HOST | sed -i -E "s/database_host/${DB_HOST}/g" zappa_settings.json 
+
+sed -i -E "s/user_name/${DB_USER}/g" zappa_settings.json 
+sed -i -E "s/user_password/${DB_USER_PASSWORD}/g" zappa_settings.json 
 
 #Deploy or update FE instacnes
 zappa deploy euwest2 && set e
